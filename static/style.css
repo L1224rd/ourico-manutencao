@@ -3,11 +3,14 @@ body {
 }
 
 .flex-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
     min-height: 100vh;
 
     background-image: url(artem-bali-680663-unsplash.jpg);
     background-size: cover;
-
 }
 
 .fa-cogs {
@@ -23,10 +26,9 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
 
-    padding-left: 80px;
-    padding-top: 80px;
+    padding: 60px;
 
-    width: 800px;
+    width: 50vw;
 }
 
 .maintenence-title {
@@ -58,4 +60,25 @@ body {
 .logo {
     height: 40px;
     width: auto;
+}
+
+@media (max-width: 1024px) {
+    .fa-cogs {
+        font-size: 100px;
+    }
+
+    .text-box {
+        justify-content: center;
+        align-items: center;
+        width: auto;
+
+        padding: 20px;
+        padding-top: 60px;
+    }
+
+    .maintenence-title {
+        margin-top: 10px;
+        font-size: 40px;
+        text-align: center;
+    }
 }
