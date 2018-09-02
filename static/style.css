@@ -6,7 +6,6 @@ body {
     display: flex;
     flex-direction: column;
 
-    width: 100%;
     min-height: 100vh;
 
     background-image: url(artem-bali-680663-unsplash.jpg);
@@ -63,6 +62,11 @@ body {
 }
 
 @media (max-width: 800px) {
+    .flex-container {
+        background-image: none;
+        background-color: #D4EFFC;
+    }
+
     .fa-cogs {
         font-size: 100px;
     }
